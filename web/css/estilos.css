@@ -1,0 +1,429 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11/11/2015, 10:12:53 PM
+    Author     : Luis david sicua 
+*/
+body {
+  overflow-x: hidden;
+}
+
+hr{
+  border-top: 3px solid #415066; 
+  border-bottom: 2px dashed #415066; 
+  border-left:none; 
+  border-right:none; 
+  height: 6px; 
+}
+
+.text-muted { /*texto de los eventos*/
+  color: #768D99 ; 
+}
+
+
+p {  /*parrafos*/
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;/*Establece el grosor de cada letra*/
+}
+
+.img-centered { /*centrar imagen del modal*/
+  margin: 0 auto;
+}
+
+
+.bg-light-gray { /*seccion de eventos fondo*/
+  background-color: #fff;
+}
+
+
+.btn-primary { /*boton primario texto*/
+  border-color: #5D9200;
+  text-transform: capitalize;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.dropdown-toggle.btn-primary {
+  border-color: #5D9200;
+  color: black;
+}
+
+/*boton primario fondo*/
+.btn-primary.disabled,
+.btn-primary[disabled],
+.btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+.btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+.btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+.btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+.btn-primary.active {
+  border-color: #88F3FF;
+  background-color: #43787E;
+}
+
+
+
+.btn-search { /*caja de buscar*/
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+
+/*BARRA MOVILES*/
+
+.navbar-default { /*barra de nav moviles*/
+  border-color: transparent;
+  background-color: #222;
+}
+
+.navbar-collapse { 
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-toggle { /*boton menu de nav moviles*/
+  border-color: #FFFEA2;
+  background-color: #777;
+}
+
+.navbar-default .navbar-toggle .icon-bar { /*rayas menu de nav moviles*/
+  background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { /*boton menu de nav moviles al dar clik*/
+  background-color: #5790B2;
+}
+
+/*BARRA ESCRITORIO*/
+
+.navbar-default .navbar-brand { /*texto del titulo del nav*/
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  color: #659CFF;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active { /*texto del titulo del nav*/
+  color: #0977CC;
+}
+
+
+.navbar-default .nav li a { /*texto del nav*/
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ddd;
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus { /*texto del nav al pasar mouse*/
+  outline: 0;
+  color: #fff;
+}
+
+/*barra de navegacion efecto*/
+
+@media(min-width:700px) {
+  .navbar-default {
+    padding: 5px 0;
+    border-bottom-color: #fff;
+    background-color: rgba(23,26,31,.9);
+    -webkit-transition: padding .9s;
+    -moz-transition: padding .9s;
+    transition: padding .9s;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .9s;
+    -moz-transition: all .9s;
+    transition: all .9s; 
+  }
+
+  .navbar-default .navbar-nav>.active>a {
+    border-radius: 3px;
+
+  }
+
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0 0 9px 9px; 
+    background-color: #222;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+}
+
+/*secciones*/
+
+section {
+  padding: 0;
+  margin-top: -20px;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+
+section h3.section-subheading {
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media(min-width:768px) {
+  section {
+    padding:  0;
+  }
+}
+
+/*Eventos*/
+#evento{ /*cajas Eventos*/
+  margin: 0px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.evento-item { /*cajas Eventos*/
+  right: 0;
+  margin: 0 0 10px;
+}
+
+.evento-link { /*cajas Eventos*/
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+
+.evento-hover { /*hover modal*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: rgba(79,162,204,.9);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.evento-hover:hover { /*hover modal*/
+  opacity: 9;
+}
+
+
+.evento-hover-content { /*Boton modal*/
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+  margin-top: -10px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.evento-hover-content i {/*Boton modal*/
+  margin-top: -12px;
+}
+
+
+.evento-hover-content h3,
+.evento-hover-content h4 {
+  margin: 0;
+}
+
+
+.evento-caption { /*caja 2 texto modal*/
+  margin: 0 auto;
+  padding: 25px;
+  max-width: 400px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.evento-caption h4 { /*caja 2 texto modal*/
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.evento-caption p { /*caja 2 texto modal*/
+  margin: 0;
+  text-transform: capitalize;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+#evento * {
+  z-index: 2;
+}
+
+
+@media(min-width:767px) {
+  .evento-item {
+    margin: 0 0 30px;
+  }
+}
+
+/*eventos modal al dar clik*/
+
+.modal-content {
+  padding: 0 0 0 0;
+  margin-left: 160px;
+  width: 1200px;
+  min-height: 100%;
+  border: 0;
+  border-radius: 8px;
+  text-align: center;
+  background-clip: border-box;
+  -webkit-box-shadow: 3px 3px 5px #000;
+  box-shadow: 3px 3px 5px #000;
+
+}
+
+.modal-content h2 { /*modal titulo*/
+  margin-bottom: 15px;
+  font-size: 3em;
+}
+
+.modal-content p { /*modal parrafos*/
+  margin-bottom: 30px;
+}
+
+.modal-content p.item-intro { /*modal subtitulo*/
+  margin: 20px 0 30px;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-style: italic;
+
+}
+
+.modal-content ul.list-inline { /*modal hora*/
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.modal-content img { /*modal imagen*/
+  margin-bottom: 30px;
+}
+
+.close-modal { /*modal cerrar X */
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-modal:hover { /*modal cerrar X hover*/
+  opacity: .3;
+}
+
+.close-modal .lr { /*modal cerrar raya 1*/
+  z-index: 1051;
+  width: 10px;
+  height: 75px;
+  margin-left: 35px;
+  background-color: #222;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /*  border: red solid;*/
+}
+
+.close-modal .lr .rl { /*modal cerrar raya 2*/
+  z-index: 1052;
+  width: 10px;
+  height: 75px;
+  background-color: #222;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  /*  border: blue solid;*/
+}
+
+/*pie de pagina*/
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+  background: #CC664A;
+}
+
+.copyright {
+  text-transform: uppercase;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 40px;
+}
+
+/*botones de red social*/
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: #222;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: #4FA2CC;
+}
